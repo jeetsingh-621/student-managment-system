@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px ;
+    background-color: aquamarine;
+
+}
+#search-bar{
+    width: 90%;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+#search-btn{
+    padding: 10px 40px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+}
+.button-container{
+    margin: 30px 0px;
+}
+.button-container button{
+    margin: 0px 20px;
+    padding: 15px 50px;
+   font-size: 17px;
+   background-color: black;
+   color: white;
+}
+#student-table{
+    width: 100%;
+}
+#student-table thead th,
+#student-table tbody td{
+    padding: 10px;
+}
+#student-table tbody td img{
+    /* background-color: red; */
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    border: 1px solid black;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Managment System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="search-bar"
+        placeholder="Search">
+        <input type="button" id="search-btn" value="Search"  oninput="handleSearch(this.value)">
+
+        <div class="button-container">
+            <button id="sort-az" onclick="sortAZ()">Sort A-Z</button>
+            <button id="sort-za" onclick="sortZA()">Sort Z-A</button>
+            <button id="sort-marks" onclick="sortByMarks()">Sort by Marks</button>
+            <button id="sort-passing" onclick="filterPassing()">Passing Students</button>
+            <button id="sort-class" onclick="sortByClass()">Sort by Class</button>
+            <button id="sort-gender" onclick="sortByGender()">Sort by Gender</button>
+        </div>
+        <table id="student-table" border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Marks</th>
+                    <th>Class</th>
+                    <th>Gender</th>
+                    <th>Passing</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
